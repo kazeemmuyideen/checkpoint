@@ -4,67 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="navbar">
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <!-- Home Section -->
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm a web developer passionate about creating amazing digital experiences.</p>
-            <video width="400" controls>
+        <section id="home" class="section home-section">
+            <h1 class="home-heading">Welcome to My Portfolio</h1>
+            <p class="home-intro">Hello! I'm a web developer passionate about creating amazing digital experiences.</p>
+            <video class="intro-video" width="400" controls>
                 <source src="intro.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </section>
 
         <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a dedicated developer with a love for clean code and innovative solutions. I enjoy turning complex problems into simple, beautiful designs.</p>
-            <h3>Skills</h3>
-            <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-            <h3>My Favorite Music</h3>
-            <audio controls>
-                <source src="music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+        <section id="about" class="section about-section">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">I'm a dedicated developer with a love for clean code and innovative solutions. I enjoy turning complex problems into simple, beautiful designs.</p>
+            <div class="skills-container">
+                <h3 class="section-subtitle">Skills</h3>
+                <ul class="skills-list">
+                    <li class="skill-item">HTML5 & CSS3</li>
+                    <li class="skill-item">JavaScript</li>
+                    <li class="skill-item">React</li>
+                    <li class="skill-item">Node.js</li>
+                </ul>
+            </div>
+            <div class="music-section">
+                <h3 class="section-subtitle">My Favorite Music</h3>
+                <audio class="music-player" controls>
+                    <source src="music.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </section>
 
         <!-- Work Section -->
-        <section id="work">
-            <h2>My Work</h2>
-            <p>Here are some of the projects I've worked on:</p>
-            <ol>
-                <li><strong>Project One:</strong> E-commerce Website - Built with React and Node.js</li>
-                <li><strong>Project Two:</strong> Portfolio Site - Responsive design with HTML5 and CSS3</li>
-                <li><strong>Project Three:</strong> Blog Platform - Full-stack application with authentication</li>
+        <section id="work" class="section work-section">
+            <h2 class="section-title">My Work</h2>
+            <p class="work-description">Here are some of the projects I've worked on:</p>
+            <ol class="projects-list">
+                <li class="project-item"><span class="project-name">Project One:</span> E-commerce Website - Built with React and Node.js</li>
+                <li class="project-item"><span class="project-name">Project Two:</span> Portfolio Site - Responsive design with HTML5 and CSS3</li>
+                <li class="project-item"><span class="project-name">Project Three:</span> Blog Platform - Full-stack application with authentication</li>
             </ol>
         </section>
 
         <!-- Resume Section -->
-        <section id="resume">
-            <h2>Resume</h2>
-            <h3>Experience</h3>
-            <table border="1" cellpadding="10">
-                <thead>
+        <section id="resume" class="section resume-section">
+            <h2 class="section-title">Resume</h2>
+            <h3 class="section-subtitle">Experience</h3>
+            <table class="resume-table">
+                <thead class="table-header">
                     <tr>
                         <th>Year</th>
                         <th>Position</th>
@@ -72,52 +77,62 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="table-row">
                         <td>2024 - Present</td>
                         <td>Frontend Developer</td>
                         <td>Tech Solutions Inc.</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                         <td>2022 - 2024</td>
                         <td>Junior Developer</td>
                         <td>WebDev Co.</td>
                     </tr>
-                    <tr>
+                    <tr class="table-row">
                         <td>2021 - 2022</td>
                         <td>Intern</td>
                         <td>StartUp Hub</td>
                     </tr>
                 </tbody>
             </table>
-            <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
+            <div class="download-container">
+                <a href="resume.pdf" download class="download-btn">Download My Resume (PDF)</a>
+            </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out! Fill out the form below:</p>
-            <form action="#" method="post">
-                <label for="name">Full Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-intro">Feel free to reach out! Fill out the form below:</p>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required><br><br>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject:</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+                </div>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                </div>
 
-                <input type="submit" value="Send Message">
+                <input type="submit" value="Send Message" class="submit-btn">
             </form>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-        <p><a href="#home">Back to Top</a></p>
+    <footer class="footer">
+        <p class="footer-text">&copy; 2026 My Portfolio. All rights reserved.</p>
+        <p class="footer-text"><a href="#home" class="footer-link">Back to Top</a></p>
     </footer>
 </body>
 </html>
