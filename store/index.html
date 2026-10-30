@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOVA — design-led tech accessories for your desk, your wrist and your everyday. Free shipping over $75, two-year warranty and 30-day returns.">
+  <title>NOVA | Design-led tech, built for every day</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard and screen reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ ANNOUNCEMENT BAR ============ -->
+  <p class="announcement mb-0">
+    <i class="bi bi-truck" aria-hidden="true"></i>
+    Free express shipping over $75
+    <span class="announcement-sep" aria-hidden="true">&middot;</span>
+    Use code <strong>NOVA10</strong> for 10% off your first order
+  </p>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg site-nav sticky-top" id="siteNav" aria-label="Main navigation">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-name">NOVA</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-1 order-lg-3">
+          <!-- Cart: opens the offcanvas bag -->
+          <button class="icon-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer"
+                  aria-controls="cartDrawer" aria-label="Open shopping bag">
+            <i class="bi bi-bag" aria-hidden="true"></i>
+            <span class="cart-badge" id="cartCount">0</span>
+          </button>
+
+          <!-- Mobile menu toggle -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                  aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#why">Why NOVA</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+          <a href="#shop" class="btn btn-dark btn-sm px-3 d-none d-lg-inline-flex">Shop the drop</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> New: the Solstice collection</p>
+            <h1 class="hero-title">Tech that earns its place on your desk.</h1>
+            <p class="hero-lead">
+              Beautifully made audio, wearables and workspace gear — designed to
+              look good, work hard and last for years, not seasons.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+              <a href="#shop" class="btn btn-dark btn-lg px-4">
+                Shop the collection <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+              </a>
+              <a href="#reviews" class="btn btn-outline-ink btn-lg px-4">Read reviews</a>
+            </div>
+
+            <!-- Social proof -->
+            <div class="hero-proof">
+              <span class="stars" aria-hidden="true">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </span>
+              <span><strong>4.9/5</strong> from 2,400+ verified reviews</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-media">
+              <span class="hero-blob" aria-hidden="true"></span>
+              <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=1000&q=80"
+                   alt="Solstice wireless headphones resting on a bright yellow background" class="hero-img" width="1000" height="1000">
+
+              <!-- Floating product tag -->
+              <div class="float-card float-card--product">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=120&q=70"
+                     alt="" width="56" height="56" class="float-thumb" aria-hidden="true">
+                <div>
+                  <span class="float-label">Bestseller</span>
+                  <span class="float-name">Solstice Headphones</span>
+                </div>
+                <span class="float-price">$249</span>
+              </div>
+
+              <!-- Floating shipping note -->
+              <div class="float-card float-card--shipping">
+                <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+                <div>
+                  <span class="float-name">Ships free</span>
+                  <span class="float-label">Orders over $75</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST STRIP ============ -->
+    <section class="trust-strip" aria-label="Shopping benefits">
+      <div class="container">
+        <ul class="trust-list list-unstyled mb-0">
+          <li>
+            <i class="bi bi-box-seam" aria-hidden="true"></i>
+            <span><strong>Free shipping</strong> on orders over $75</span>
+          </li>
+          <li>
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            <span><strong>2-year warranty</strong> on every product</span>
+          </li>
+          <li>
+            <i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
+            <span><strong>30-day returns</strong> no questions asked</span>
+          </li>
+          <li>
+            <i class="bi bi-globe-americas" aria-hidden="true"></i>
+            <span><strong>Carbon-neutral</strong> delivery as standard</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCTS ============ -->
+    <section class="section products-section" id="shop">
+      <div class="container">
+        <div class="row align-items-end g-4 section-head">
+          <div class="col-lg-7">
+            <p class="eyebrow">The collection</p>
+            <h2 class="section-title">Everyday essentials, upgraded.</h2>
+            <p class="section-lead">
+              Six pieces we use every single day. No gimmicks, no filler —
+              just quietly excellent gear that gets better with time.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <!-- Category filter (Bootstrap-free buttons wired up with a little JS) -->
+            <div class="filter-pills" role="group" aria-label="Filter products by category">
+              <button type="button" class="filter-pill is-active" data-filter="all" aria-pressed="true">All</button>
+              <button type="button" class="filter-pill" data-filter="audio" aria-pressed="false">Audio</button>
+              <button type="button" class="filter-pill" data-filter="wearables" aria-pressed="false">Wearables</button>
+              <button type="button" class="filter-pill" data-filter="workspace" aria-pressed="false">Workspace</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="productGrid">
+          <!-- Product 1 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="audio">
+            <article class="card product-card h-100"
+                     data-name="Solstice Wireless Headphones" data-price="249"
+                     data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80"
+                     alt="Black Solstice over-ear wireless headphones" class="card-img-top" loading="lazy" width="700" height="700">
+                <span class="product-badge">Bestseller</span>
+                <button class="wish-btn" type="button" aria-label="Save Solstice Wireless Headphones to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Audio</p>
+                <h3 class="product-name"><a href="#shop">Solstice Wireless Headphones</a></h3>
+                <p class="product-desc">
+                  Active noise cancelling, 40-hour battery and memory-foam cups
+                  that stay comfortable all day.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>4.9 <span class="review-count">(312)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">$249.00</span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="wearables">
+            <article class="card product-card h-100"
+                     data-name="Pulse Smartwatch" data-price="199"
+                     data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
+                     alt="Pulse smartwatch with a pale leather strap" class="card-img-top" loading="lazy" width="700" height="700">
+                <span class="product-badge product-badge--new">New</span>
+                <button class="wish-btn" type="button" aria-label="Save Pulse Smartwatch to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Wearables</p>
+                <h3 class="product-name"><a href="#shop">Pulse Smartwatch</a></h3>
+                <p class="product-desc">
+                  Sleep, recovery and movement tracking in a 38&nbsp;g case.
+                  Charges fully in under an hour.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  </span>
+                  <span>4.8 <span class="review-count">(198)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">$199.00</span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="audio">
+            <article class="card product-card h-100"
+                     data-name="Orbit Desk Speaker" data-price="129"
+                     data-image="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=80"
+                     alt="Compact Orbit speaker on a wooden surface" class="card-img-top" loading="lazy" width="700" height="700">
+                <button class="wish-btn" type="button" aria-label="Save Orbit Desk Speaker to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Audio</p>
+                <h3 class="product-name"><a href="#shop">Orbit Desk Speaker</a></h3>
+                <p class="product-desc">
+                  Room-filling 360° sound from a speaker that fits beside your
+                  monitor. USB-C powered.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  </span>
+                  <span>4.7 <span class="review-count">(146)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">$129.00</span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="workspace">
+            <article class="card product-card h-100"
+                     data-name="Flow Mechanical Keyboard" data-price="159"
+                     data-image="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80"
+                     alt="Flow mechanical keyboard with backlit keys" class="card-img-top" loading="lazy" width="700" height="700">
+                <span class="product-badge product-badge--new">New</span>
+                <button class="wish-btn" type="button" aria-label="Save Flow Mechanical Keyboard to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Workspace</p>
+                <h3 class="product-name"><a href="#shop">Flow Mechanical Keyboard</a></h3>
+                <p class="product-desc">
+                  Hot-swappable switches, a low-profile aluminium frame and
+                  three ways to connect.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </span>
+                  <span>4.9 <span class="review-count">(274)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">$159.00</span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="workspace">
+            <article class="card product-card h-100"
+                     data-name="Arc Wireless Mouse" data-price="79"
+                     data-image="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?auto=format&fit=crop&w=700&q=80"
+                     alt="Arc wireless mouse beside a laptop" class="card-img-top" loading="lazy" width="700" height="700">
+                <button class="wish-btn" type="button" aria-label="Save Arc Wireless Mouse to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Workspace</p>
+                <h3 class="product-name"><a href="#shop">Arc Wireless Mouse</a></h3>
+                <p class="product-desc">
+                  Sculpted for long days, silent clicks and a 90-day battery
+                  that charges over USB-C.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                  </span>
+                  <span>4.6 <span class="review-count">(121)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">$79.00</span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-sm-6 col-lg-4 product-col" data-category="wearables">
+            <article class="card product-card h-100"
+                     data-name="Halo Sunglasses" data-price="95"
+                     data-image="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=200&q=70">
+              <div class="product-media">
+                <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=80"
+                     alt="Halo polarised sunglasses with a tortoiseshell frame" class="card-img-top" loading="lazy" width="700" height="700">
+                <span class="product-badge product-badge--sale">Save 20%</span>
+                <button class="wish-btn" type="button" aria-label="Save Halo Sunglasses to your wishlist" aria-pressed="false">
+                  <i class="bi bi-heart" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <p class="product-category">Wearables</p>
+                <h3 class="product-name"><a href="#shop">Halo Sunglasses</a></h3>
+                <p class="product-desc">
+                  Polarised lenses and a featherweight acetate frame, made for
+                  bright mornings and long drives.
+                </p>
+                <div class="product-rating">
+                  <span class="stars" aria-hidden="true">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                  </span>
+                  <span>4.8 <span class="review-count">(89)</span></span>
+                </div>
+                <div class="product-foot mt-auto">
+                  <span class="product-price">
+                    $95.00 <s class="product-price-old">$119.00</s>
+                  </span>
+                  <button class="btn btn-dark shop-btn" type="button">
+                    Shop Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="products-note text-center mb-0">
+          <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+          Every order ships carbon-neutral, in plastic-free packaging.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ WHY NOVA ============ -->
+    <section class="section why-section" id="why">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="why-media">
+              <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=900&q=80"
+                   alt="A tidy desk set up with a laptop, keyboard and headphones" class="why-img" loading="lazy" width="900" height="600">
+              <div class="why-stat">
+                <span class="why-stat-value">98%</span>
+                <span class="why-stat-label">of customers would<br>buy from us again</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <p class="eyebrow">Why NOVA</p>
+            <h2 class="section-title">Designed to disappear into your day.</h2>
+            <p class="section-lead">
+              We build fewer things, better. Each product is tested for months
+              before it launches, and every part that can be repaired or
+              recycled is.
+            </p>
+
+            <ul class="why-list list-unstyled">
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Machined aluminium, recycled wherever possible</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Two-year warranty on every single product</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Free 30-day returns, no questions asked</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Spare parts stocked for at least five years</li>
+            </ul>
+
+            <div class="why-stats">
+              <div>
+                <span class="why-stat-mini">12k+</span>
+                <span class="why-stat-caption">Happy customers</span>
+              </div>
+              <div>
+                <span class="why-stat-mini">4.9/5</span>
+                <span class="why-stat-caption">Average rating</span>
+              </div>
+              <div>
+                <span class="why-stat-mini">48h</span>
+                <span class="why-stat-caption">Typical delivery</span>
+              </div>
+            </div>
+
+            <a href="#shop" class="btn btn-dark btn-lg px-4 mt-4">
+              Explore the collection <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center section-head">
+            <p class="eyebrow">Loved by 12,000+ people</p>
+            <h2 class="section-title">Good gear, good words.</h2>
+            <p class="section-lead">
+              We ask every customer for honest feedback after 30 days.
+              These are a few of our favourites.
+            </p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <figure class="card review-card h-100 mb-0">
+              <div class="card-body">
+                <span class="stars" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                </span>
+                <blockquote class="review-quote">
+                  “The Solstice headphones are the first pair I've owned that I
+                  forget I'm wearing. The battery genuinely lasts the week.”
+                </blockquote>
+                <figcaption class="review-author">
+                  <span class="avatar" aria-hidden="true">AO</span>
+                  <span>
+                    <span class="review-name">Amara O.</span>
+                    <span class="review-role">Product designer · Lagos</span>
+                  </span>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-md-4">
+            <figure class="card review-card h-100 mb-0">
+              <div class="card-body">
+                <span class="stars" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                </span>
+                <blockquote class="review-quote">
+                  “Ordered on Tuesday, on my desk by Thursday. The packaging
+                  alone felt like a gift — nothing plastic, nothing wasted.”
+                </blockquote>
+                <figcaption class="review-author">
+                  <span class="avatar" aria-hidden="true">DK</span>
+                  <span>
+                    <span class="review-name">Daniel K.</span>
+                    <span class="review-role">Architect · Nairobi</span>
+                  </span>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+
+          <div class="col-md-4">
+            <figure class="card review-card h-100 mb-0">
+              <div class="card-body">
+                <span class="stars" aria-label="Rated 5 out of 5">
+                  <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                </span>
+                <blockquote class="review-quote">
+                  “My Flow keyboard has survived two house moves and one coffee
+                  spill. It still types like the day I unboxed it.”
+                </blockquote>
+                <figcaption class="review-author">
+                  <span class="avatar" aria-hidden="true">PS</span>
+                  <span>
+                    <span class="review-name">Priya S.</span>
+                    <span class="review-role">Developer · Manchester</span>
+                  </span>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER ============ -->
+    <section class="newsletter" id="contact">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="eyebrow eyebrow-light">Join the list</p>
+            <h2 class="newsletter-title">First access, better prices.</h2>
+            <p class="newsletter-lead">
+              New drops, restocks and the occasional design note. One email a
+              month, no noise, unsubscribe anytime.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <label for="newsletterEmail" class="visually-hidden">Email address</label>
+              <div class="newsletter-field">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <input type="email" id="newsletterEmail" name="email" class="form-control"
+                       placeholder="you@example.com" autocomplete="email"
+                       aria-describedby="newsletterNote" required>
+                <button type="submit" class="btn btn-lime">Join the list</button>
+              </div>
+              <p class="newsletter-note mb-0" id="newsletterNote">
+                <i class="bi bi-shield-lock" aria-hidden="true"></i>
+                We never share your details. Read our privacy note.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <a class="footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>NOVA</span>
+          </a>
+          <p class="footer-about">
+            Design-led tech for everyday life. Built to be used, repaired and
+            kept — not replaced every season.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="NOVA on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="NOVA on X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="NOVA on YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="NOVA on TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h2 class="footer-heading">Shop</h2>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#shop">Audio</a></li>
+            <li><a href="#shop">Wearables</a></li>
+            <li><a href="#shop">Workspace</a></li>
+            <li><a href="#shop">Gift cards</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h2 class="footer-heading">Support</h2>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="mailto:hello@nova.store">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h2 class="footer-heading">Visit</h2>
+          <ul class="footer-links list-unstyled">
+            <li>18 Marina Walk</li>
+            <li>Victoria Island, Lagos</li>
+            <li>Mon – Sat · 9:00 – 18:00</li>
+            <li><a href="mailto:hello@nova.store">hello@nova.store</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-rule">
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; <span id="year">2026</span> NOVA. All rights reserved.</p>
+
+        <ul class="footer-legal list-unstyled mb-0">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#home">Back to top <i class="bi bi-arrow-up" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <ul class="payment-badges list-unstyled mb-0" aria-label="Accepted payment methods">
+          <li>Visa</li>
+          <li>Mastercard</li>
+          <li>Amex</li>
+          <li>PayPal</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER (Bootstrap offcanvas) ============ -->
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title h5 mb-0" id="cartDrawerLabel">Your bag</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close bag"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <!-- Cart items are rendered here by JS -->
+      <div id="cartItems" class="cart-items"></div>
+      <p id="cartEmpty" class="cart-empty mb-0">
+        Your bag is empty. Add something you love.
+      </p>
+
+      <div class="cart-summary mt-auto">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0.00</strong>
+        </div>
+        <p class="cart-note">Shipping and taxes calculated at checkout.</p>
+        <button type="button" class="btn btn-dark w-100" id="checkoutBtn">Checkout</button>
+        <button type="button" class="btn btn-link w-100" data-bs-dismiss="offcanvas">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TOASTS ============ -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="siteToast" class="toast site-toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex align-items-center">
+        <div class="toast-body d-flex align-items-center gap-2">
+          <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+          <span id="siteToastText">Added to your bag.</span>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close notification"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    /* ======================================================================
+       1. Navbar: solid background once the page is scrolled
+       ====================================================================== */
+    const siteNav = document.getElementById('siteNav');
+    const updateNav = () => siteNav.classList.toggle('scrolled', window.scrollY > 8);
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    /* Close the mobile menu after tapping a link */
+    const navCollapse = document.getElementById('mainNav');
+    navCollapse.querySelectorAll('.nav-link, .btn').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navCollapse.classList.contains('show')) {
+          bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+        }
+      });
+    });
+
+    /* ======================================================================
+       2. Product filters: show only the cards in the chosen category
+       ====================================================================== */
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const productCols = document.querySelectorAll('.product-col');
+
+    filterPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const filter = pill.dataset.filter;
+
+        filterPills.forEach((other) => {
+          const isActive = other === pill;
+          other.classList.toggle('is-active', isActive);
+          other.setAttribute('aria-pressed', String(isActive));
+        });
+
+        productCols.forEach((col) => {
+          col.hidden = filter !== 'all' && col.dataset.category !== filter;
+        });
+      });
+    });
+
+    /* ======================================================================
+       3. Wishlist hearts (visual toggle only — no account behind it)
+       ====================================================================== */
+    document.querySelectorAll('.wish-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const isSaved = btn.getAttribute('aria-pressed') === 'true';
+        btn.setAttribute('aria-pressed', String(!isSaved));
+        btn.querySelector('i').className = isSaved ? 'bi bi-heart' : 'bi bi-heart-fill';
+        showToast(isSaved ? 'Removed from your wishlist.' : 'Saved to your wishlist.');
+      });
+    });
+
+    /* ======================================================================
+       4. Mini cart: add products, show them in the offcanvas bag
+       ====================================================================== */
+    const cart = new Map(); // product name -> { name, price, image, qty }
+    const cartItemsEl = document.getElementById('cartItems');
+    const cartEmptyEl = document.getElementById('cartEmpty');
+    const cartCountEl = document.getElementById('cartCount');
+    const cartSubtotalEl = document.getElementById('cartSubtotal');
+    const money = (value) => '$' + value.toFixed(2);
+
+    function renderCart() {
+      const items = [...cart.values()];
+      const count = items.reduce((total, item) => total + item.qty, 0);
+      const subtotal = items.reduce((total, item) => total + item.qty * item.price, 0);
+
+      cartCountEl.textContent = count;
+      cartSubtotalEl.textContent = money(subtotal);
+      cartEmptyEl.hidden = items.length > 0;
+
+      cartItemsEl.innerHTML = items.map((item) => `
+        <div class="cart-item">
+          <img src="${item.image}" alt="" width="64" height="64" loading="lazy">
+          <div class="cart-item-body">
+            <p class="cart-item-name">${item.name}</p>
+            <p class="cart-item-meta">Qty ${item.qty} &middot; ${money(item.price)}</p>
+          </div>
+          <button type="button" class="cart-remove" data-remove="${item.name}" aria-label="Remove ${item.name} from bag">
+            <i class="bi bi-x-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+      `).join('');
+
+      /* Wire up the remove buttons that were just rendered */
+      cartItemsEl.querySelectorAll('[data-remove]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          cart.delete(btn.dataset.remove);
+          renderCart();
+        });
+      });
+    }
+
+    document.querySelectorAll('.shop-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.product-card');
+        const name = card.dataset.name;
+
+        if (cart.has(name)) {
+          cart.get(name).qty += 1;
+        } else {
+          cart.set(name, {
+            name,
+            price: Number(card.dataset.price),
+            image: card.dataset.image,
+            qty: 1
+          });
+        }
+
+        renderCart();
+        showToast(name + ' added to your bag.');
+      });
+    });
+
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      showToast('This is a demo store — checkout is not connected.');
+    });
+
+    /* ======================================================================
+       5. Toast helper (Bootstrap toast API)
+       ====================================================================== */
+    const toastEl = document.getElementById('siteToast');
+    const toastTextEl = document.getElementById('siteToastText');
+    const toast = bootstrap.Toast.getOrCreateInstance(toastEl, { delay: 2600 });
+
+    function showToast(message) {
+      toastTextEl.textContent = message;
+      toast.show();
+    }
+
+    /* ======================================================================
+       6. Newsletter: basic validation + friendly confirmation
+       ====================================================================== */
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterEmail = document.getElementById('newsletterEmail');
+
+    newsletterForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (!newsletterEmail.checkValidity()) {
+        newsletterEmail.classList.add('is-invalid');
+        newsletterEmail.setAttribute('aria-invalid', 'true');
+        newsletterEmail.focus();
+        return;
+      }
+
+      newsletterEmail.classList.remove('is-invalid');
+      newsletterEmail.removeAttribute('aria-invalid');
+      newsletterForm.reset();
+      showToast('You are on the list — welcome to NOVA.');
+    });
+
+    newsletterEmail.addEventListener('input', () => {
+      newsletterEmail.classList.remove('is-invalid');
+      newsletterEmail.removeAttribute('aria-invalid');
+    });
+
+    /* ======================================================================
+       7. Footer year
+       ====================================================================== */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
