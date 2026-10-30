@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderly — thoughtfully planned small-group journeys to the world's most beautiful places, with local experts and 24/7 support.">
+  <title>Wanderly | Small-Group Journeys, Thoughtfully Planned</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -70%" data-bs-smooth-scroll="true" tabindex="0">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-nav" id="siteNav" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <span class="brand-icon" aria-hidden="true"><i class="bi bi-compass"></i></span>
+        <span class="brand-text">Wanderly</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-coral btn-sm px-4 py-2" href="#contact">Plan a Trip</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="home">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-9 col-xl-8">
+          <p class="eyebrow eyebrow-light">Small-group travel &middot; Since 2012</p>
+          <h1 class="hero-title">Travel further.<br><span>Feel closer.</span></h1>
+          <p class="hero-lead">
+            Thoughtfully planned journeys to the world's most beautiful places.
+            Local experts, small groups and just enough free time to get lost.
+          </p>
+          <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+            <a href="#destinations" class="btn btn-coral btn-lg px-4">Explore Destinations</a>
+            <a href="#tours" class="btn btn-ghost btn-lg px-4">Browse Tours <i class="bi bi-arrow-down-right ms-1" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="hero-stat-value">48</span>
+              <span class="hero-stat-label">Handpicked places</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">12k+</span>
+              <span class="hero-stat-label">Happy travellers</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">4.9<span class="hero-stat-small">/5</span></span>
+              <span class="hero-stat-label">Average rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#destinations" class="scroll-cue" aria-label="Scroll to destinations">
+      <i class="bi bi-chevron-down" aria-hidden="true"></i>
+    </a>
+  </header>
+
+  <main>
+    <!-- ============ VALUE STRIP ============ -->
+    <section class="value-strip" aria-label="Why travel with Wanderly">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-md-4">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+              <div>
+                <h2 class="h6">Local experts, on the ground</h2>
+                <p>Every itinerary is built and led by people who call the place home.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true"><i class="bi bi-tree"></i></span>
+              <div>
+                <h2 class="h6">Travel that gives back</h2>
+                <p>Carbon-conscious routes and a share of every booking to local projects.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true"><i class="bi bi-headset"></i></span>
+              <div>
+                <h2 class="h6">Real support, 24/7</h2>
+                <p>A real human on the phone, wherever you are and whenever you need us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESTINATIONS ============ -->
+    <section class="section destinations-section" id="destinations">
+      <div class="container">
+        <div class="row align-items-end g-3 section-head">
+          <div class="col-lg-8">
+            <p class="eyebrow">Where to next?</p>
+            <h2 class="section-title">Places worth crossing<br class="d-none d-md-block"> the world for.</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="#destinations" class="link-arrow">View all destinations <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Santorini -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Whitewashed buildings and blue domes overlooking the sea in Santorini" loading="lazy">
+                <span class="dest-region">Greece</span>
+                <span class="dest-price">from $1,890</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Santorini</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9</span>
+                </div>
+                <p class="card-text">
+                  Whitewashed villages, caldera sunsets and slow days on the
+                  Aegean. Our favourite Greek island, done properly.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 7 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 12</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Kyoto -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Traditional street and pagoda in Kyoto, Japan" loading="lazy">
+                <span class="dest-region">Japan</span>
+                <span class="dest-price">from $2,340</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Kyoto</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9</span>
+                </div>
+                <p class="card-text">
+                  Temple gardens, tiny tea houses and lantern-lit lanes. A
+                  slower, quieter side of Japan that stays with you.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 10 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 10</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Bali -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Tropical temple and lush greenery in Bali, Indonesia" loading="lazy">
+                <span class="dest-region">Indonesia</span>
+                <span class="dest-price">from $1,520</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Ubud, Bali</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.8</span>
+                </div>
+                <p class="card-text">
+                  Rice terraces, jungle temples and a week that moves at the
+                  pace of a scooter ride. Equal parts rest and adventure.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 7 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 12</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Amalfi -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Colourful cliffside village on the Amalfi Coast, Italy" loading="lazy">
+                <span class="dest-region">Italy</span>
+                <span class="dest-price">from $2,100</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Amalfi Coast</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.8</span>
+                </div>
+                <p class="card-text">
+                  Lemon groves, cliffside villages and long lunches by the
+                  water. La dolce vita, without the crowds.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 8 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 10</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Swiss Alps -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Snow-capped peaks reflected in an alpine lake in Switzerland" loading="lazy">
+                <span class="dest-region">Switzerland</span>
+                <span class="dest-price">from $2,760</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Swiss Alps</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9</span>
+                </div>
+                <p class="card-text">
+                  Glacier trains, mountain huts and air so clean it feels
+                  borrowed. Big views, gentle trails, zero rush.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 6 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 8</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Dubai -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card destination-card h-100">
+              <div class="dest-img-wrap">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                     class="card-img-top" alt="Dubai skyline at dusk, United Arab Emirates" loading="lazy">
+                <span class="dest-region">UAE</span>
+                <span class="dest-price">from $1,650</span>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex align-items-baseline justify-content-between gap-2">
+                  <h3 class="dest-title">Dubai</h3>
+                  <span class="dest-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.7</span>
+                </div>
+                <p class="card-text">
+                  Desert dunes at sunrise, old-town spice souks and a skyline
+                  that never sits still. Big-city energy, warm nights.
+                </p>
+                <div class="dest-meta">
+                  <span><i class="bi bi-clock" aria-hidden="true"></i> 5 days</span>
+                  <span><i class="bi bi-people" aria-hidden="true"></i> Max 14</span>
+                </div>
+                <a href="#contact" class="btn btn-outline-teal w-100 mt-3">Learn More <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TOURS ============ -->
+    <section class="section tours-section" id="tours">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="tour-intro">
+              <p class="eyebrow">Ready-made, never cookie-cutter</p>
+              <h2 class="section-title">Find your kind of journey.</h2>
+              <p>
+                Our most-loved itineraries, refined over a decade of travelling
+                with curious people. Every tour includes local guides, boutique
+                stays and the small details that make a trip feel effortless.
+              </p>
+
+              <ul class="tour-perks list-unstyled">
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Small groups of 8–14 travellers</li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Handpicked, locally owned stays</li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Private transfers and rail passes</li>
+                <li><i class="bi bi-check2-circle" aria-hidden="true"></i> Free time built into every day</li>
+              </ul>
+
+              <div class="advisor-box">
+                <span class="advisor-icon" aria-hidden="true"><i class="bi bi-chat-heart"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Not sure which one?</h3>
+                  <p class="mb-2">Talk to a real travel designer — no call centres, no pressure.</p>
+                  <a href="tel:+2348012345678" class="link-arrow">+234 801 234 5678 <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="accordion tour-accordion" id="tourAccordion">
+              <!-- Tour 1 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="tourHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#tourOne" aria-expanded="true" aria-controls="tourOne">
+                    <span class="tour-head">
+                      <span class="tour-title">Aegean Island Hopper</span>
+                      <span class="tour-meta">8 days &middot; Greece &middot; Max 12</span>
+                    </span>
+                    <span class="tour-price">$2,150</span>
+                  </button>
+                </h3>
+                <div id="tourOne" class="accordion-collapse collapse show" aria-labelledby="tourHeadingOne" data-bs-parent="#tourAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Sail between Paros, Naxos and Santorini at an unhurried
+                      pace. Days are split between hidden coves, hilltop villages
+                      and long taverna dinners by the water.
+                    </p>
+                    <ul class="tour-highlights">
+                      <li>Three island stays with seafront hotels</li>
+                      <li>Private catamaran day and sunset wine tasting</li>
+                      <li>Local guide throughout, all ferries included</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">View Details <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tour 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="tourHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#tourTwo" aria-expanded="false" aria-controls="tourTwo">
+                    <span class="tour-head">
+                      <span class="tour-title">Cherry Blossom Trail</span>
+                      <span class="tour-meta">10 days &middot; Japan &middot; Max 10</span>
+                    </span>
+                    <span class="tour-price">$3,280</span>
+                  </button>
+                </h3>
+                <div id="tourTwo" class="accordion-collapse collapse" aria-labelledby="tourHeadingTwo" data-bs-parent="#tourAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Tokyo, Kyoto and Osaka in spring, when the whole country
+                      seems to slow down for the blossoms. A mix of big-city
+                      energy and quiet temple mornings.
+                    </p>
+                    <ul class="tour-highlights">
+                      <li>7-day Japan Rail pass and private transfers</li>
+                      <li>Tea ceremony, calligraphy class and izakaya night</li>
+                      <li>Riverside stays and a night in a traditional ryokan</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">View Details <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tour 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="tourHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#tourThree" aria-expanded="false" aria-controls="tourThree">
+                    <span class="tour-head">
+                      <span class="tour-title">Bali Bliss Retreat</span>
+                      <span class="tour-meta">7 days &middot; Indonesia &middot; Max 12</span>
+                    </span>
+                    <span class="tour-price">$1,780</span>
+                  </button>
+                </h3>
+                <div id="tourThree" class="accordion-collapse collapse" aria-labelledby="tourHeadingThree" data-bs-parent="#tourAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      A week split between the rice terraces of Ubud and the
+                      quiet end of Seminyak. Morning yoga, a volcano sunrise
+                      hike and plenty of time by the pool.
+                    </p>
+                    <ul class="tour-highlights">
+                      <li>Six nights in boutique garden villas</li>
+                      <li>Sunrise trek up Mount Batur with a local guide</li>
+                      <li>Balinese cooking class and spa afternoon</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">View Details <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tour 4 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="tourHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#tourFour" aria-expanded="false" aria-controls="tourFour">
+                    <span class="tour-head">
+                      <span class="tour-title">Alpine Explorer</span>
+                      <span class="tour-meta">6 days &middot; Switzerland &middot; Max 8</span>
+                    </span>
+                    <span class="tour-price">$2,940</span>
+                  </button>
+                </h3>
+                <div id="tourFour" class="accordion-collapse collapse" aria-labelledby="tourHeadingFour" data-bs-parent="#tourAccordion">
+                  <div class="accordion-body">
+                    <p>
+                      Trains, trails and mountain air. Base yourself in Zermatt
+                      and Grindelwald for a week of gentle hikes, glacier views
+                      and long dinners in wood-panelled huts.
+                    </p>
+                    <ul class="tour-highlights">
+                      <li>First-class Glacier Express journey</li>
+                      <li>Guided hikes for all levels, luggage transferred</li>
+                      <li>Mountain hut dinner with Matterhorn views</li>
+                    </ul>
+                    <a href="#contact" class="link-arrow">View Details <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <p class="eyebrow eyebrow-light">Start the conversation</p>
+            <h2 class="contact-title">Let's plan something unforgettable.</h2>
+            <p class="contact-lead">
+              Tell us a little about the trip you have in mind. One of our
+              travel designers will reply within one working day with ideas,
+              timing and a rough budget — no obligation.
+            </p>
+
+            <ul class="contact-list list-unstyled">
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-envelope"></i></span>
+                <div>
+                  <span class="contact-label">Email us</span>
+                  <a href="mailto:hello@wanderly.travel">hello@wanderly.travel</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-telephone"></i></span>
+                <div>
+                  <span class="contact-label">Call us</span>
+                  <a href="tel:+2348012345678">+234 801 234 5678</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></span>
+                <div>
+                  <span class="contact-label">Visit us</span>
+                  <span>18 Marina Walk, Victoria Island, Lagos</span>
+                </div>
+              </li>
+            </ul>
+
+            <p class="contact-note">
+              <i class="bi bi-shield-check" aria-hidden="true"></i>
+              Your details stay with us. Always.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="card contact-card border-0">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="h4 mb-1">Tell us about your trip</h3>
+                <p class="text-muted mb-4">Fields marked with an asterisk are required.</p>
+
+                <form action="#" method="post">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="travelName" name="name" placeholder="Full name" required>
+                        <label for="travelName">Full name *</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="travelEmail" name="email" placeholder="Email address" required>
+                        <label for="travelEmail">Email address *</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <select class="form-select" id="travelDestination" name="destination" required>
+                          <option value="" selected disabled>Choose a destination</option>
+                          <option value="santorini">Santorini, Greece</option>
+                          <option value="kyoto">Kyoto, Japan</option>
+                          <option value="bali">Ubud, Bali</option>
+                          <option value="amalfi">Amalfi Coast, Italy</option>
+                          <option value="alps">Swiss Alps, Switzerland</option>
+                          <option value="dubai">Dubai, UAE</option>
+                          <option value="unsure">Somewhere else / not sure yet</option>
+                        </select>
+                        <label for="travelDestination">Destination of interest *</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating">
+                        <textarea class="form-control" id="travelMessage" name="message" placeholder="Message" style="height: 150px" required></textarea>
+                        <label for="travelMessage">Tell us about your trip *</label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="newsletter">
+                        <label class="form-check-label" for="newsletter">
+                          Send me occasional travel inspiration (no more than once a month).
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 d-grid d-sm-block">
+                      <button type="submit" class="btn btn-coral btn-lg px-4">Send my request</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band" aria-label="Start planning your trip">
+      <div class="container">
+        <div class="cta-inner text-center">
+          <p class="eyebrow eyebrow-light">Your next chapter</p>
+          <h2>Ready when you are.</h2>
+          <p>Tell us how you like to travel and we will take it from there.</p>
+          <a href="#contact" class="btn btn-coral btn-lg px-4">Start planning</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-lg-4">
+          <a class="footer-brand d-inline-flex align-items-center gap-2 text-decoration-none" href="#home">
+            <span class="brand-icon" aria-hidden="true"><i class="bi bi-compass"></i></span>
+            <span>Wanderly</span>
+          </a>
+          <p class="footer-about mt-3">
+            Small-group journeys for people who would rather see a place than
+            tick it off a list. Locally led, thoughtfully planned, always human.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-btn" aria-label="Wanderly on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="Wanderly on Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="Wanderly on X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" aria-label="Wanderly on YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-heading">Destinations</h3>
+          <ul class="footer-links list-unstyled">
+            <li><a href="#destinations">Santorini</a></li>
+            <li><a href="#destinations">Kyoto</a></li>
+            <li><a href="#destinations">Bali</a></li>
+            <li><a href="#destinations">Swiss Alps</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Get in touch</h3>
+          <ul class="footer-links list-unstyled">
+            <li><a href="mailto:hello@wanderly.travel">hello@wanderly.travel</a></li>
+            <li><a href="tel:+2348012345678">+234 801 234 5678</a></li>
+            <li>18 Marina Walk, Victoria Island</li>
+            <li>Lagos, Nigeria</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-rule">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 footer-bottom">
+        <p class="mb-0">&copy; 2026 Wanderly Travel Co. All rights reserved.</p>
+        <p class="mb-0">
+          <a href="#">Privacy</a>
+          <span class="mx-2" aria-hidden="true">&middot;</span>
+          <a href="#">Terms</a>
+          <span class="mx-2" aria-hidden="true">&middot;</span>
+          <a href="#home">Back to top</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Solid white navbar once scrolled past the hero.
+    const siteNav = document.getElementById('siteNav');
+    const updateNav = () => siteNav.classList.toggle('scrolled', window.scrollY > 40);
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+
+    // Close the mobile menu after choosing a link.
+    const navCollapse = document.getElementById('mainNav');
+    navCollapse.querySelectorAll('.nav-link, .btn').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (navCollapse.classList.contains('show')) {
+          bootstrap.Collapse.getOrCreateInstance(navCollapse).hide();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
