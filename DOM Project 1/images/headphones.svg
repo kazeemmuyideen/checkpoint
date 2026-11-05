@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="headphones-title">
+  <title id="headphones-title">Teal wireless headphones</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#ccfbf1"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="44" fill="url(#bg)"/>
+  <circle cx="324" cy="80" r="56" fill="#99f6e4" opacity=".65"/>
+  <circle cx="72" cy="320" r="42" fill="#ffffff" opacity=".65"/>
+  <ellipse cx="200" cy="340" rx="120" ry="16" fill="#5eead4" opacity=".55"/>
+
+  <!-- headband -->
+  <path d="M106 244v-44c0-52 42-94 94-94s94 42 94 94v44" fill="none" stroke="#0f766e" stroke-width="26" stroke-linecap="round"/>
+  <path d="M114 212v-20c0-46 38-84 86-84s86 38 86 84v20" fill="none" stroke="#14b8a6" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+
+  <!-- left cup -->
+  <rect x="76" y="218" width="64" height="106" rx="30" fill="url(#cup)"/>
+  <rect x="98" y="240" width="30" height="62" rx="15" fill="#115e59" opacity=".8"/>
+  <path d="M90 242v58" fill="none" stroke="#99f6e4" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+
+  <!-- right cup -->
+  <rect x="260" y="218" width="64" height="106" rx="30" fill="url(#cup)"/>
+  <rect x="272" y="240" width="30" height="62" rx="15" fill="#115e59" opacity=".8"/>
+  <path d="M310 242v58" fill="none" stroke="#99f6e4" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+
+  <!-- accent dots -->
+  <circle cx="226" cy="132" r="6" fill="#0d9488" opacity=".45"/>
+  <circle cx="246" cy="150" r="4" fill="#0d9488" opacity=".3"/>
+</svg>

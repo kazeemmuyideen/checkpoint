@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DOM Project 1 — a functional shopping cart built with vanilla JavaScript and DOM events.">
+  <title>DOM Project 1 · Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="cart" aria-labelledby="cart-title">
+      <header class="cart__header">
+        <div>
+          <p class="cart__eyebrow">DOM Project 1</p>
+          <h1 class="cart__title" id="cart-title">Shopping Cart</h1>
+        </div>
+        <p class="cart__count">
+          <span id="item-count">3</span>
+          <span id="item-label">items</span>
+        </p>
+      </header>
+
+      <ul class="cart__items" id="cart-items">
+        <li class="cart-item" data-name="Classic Sneakers" data-price="120">
+          <img class="cart-item__thumb" src="images/sneakers.svg" alt="Classic indigo sneakers" width="96" height="96">
+          <div class="cart-item__info">
+            <h2 class="cart-item__name">Classic Sneakers</h2>
+            <p class="cart-item__price">$120.00 each</p>
+          </div>
+          <div class="quantity" role="group" aria-label="Quantity for Classic Sneakers">
+            <button type="button" class="quantity__btn minus" aria-label="Decrease quantity of Classic Sneakers">&minus;</button>
+            <span class="quantity__value" aria-live="polite">1</span>
+            <button type="button" class="quantity__btn plus" aria-label="Increase quantity of Classic Sneakers">+</button>
+          </div>
+          <p class="cart-item__total" aria-label="Line total">$<span class="line-total">120.00</span></p>
+          <div class="cart-item__actions">
+            <button type="button" class="icon-btn like-btn" aria-pressed="false" aria-label="Like Classic Sneakers">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <button type="button" class="icon-btn delete-btn" aria-label="Remove Classic Sneakers">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="cart-item" data-name="Leather Backpack" data-price="89.99">
+          <img class="cart-item__thumb" src="images/backpack.svg" alt="Tan leather backpack" width="96" height="96">
+          <div class="cart-item__info">
+            <h2 class="cart-item__name">Leather Backpack</h2>
+            <p class="cart-item__price">$89.99 each</p>
+          </div>
+          <div class="quantity" role="group" aria-label="Quantity for Leather Backpack">
+            <button type="button" class="quantity__btn minus" aria-label="Decrease quantity of Leather Backpack">&minus;</button>
+            <span class="quantity__value" aria-live="polite">1</span>
+            <button type="button" class="quantity__btn plus" aria-label="Increase quantity of Leather Backpack">+</button>
+          </div>
+          <p class="cart-item__total" aria-label="Line total">$<span class="line-total">89.99</span></p>
+          <div class="cart-item__actions">
+            <button type="button" class="icon-btn like-btn" aria-pressed="false" aria-label="Like Leather Backpack">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <button type="button" class="icon-btn delete-btn" aria-label="Remove Leather Backpack">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+            </button>
+          </div>
+        </li>
+
+        <li class="cart-item" data-name="Wireless Headphones" data-price="199.5">
+          <img class="cart-item__thumb" src="images/headphones.svg" alt="Teal wireless headphones" width="96" height="96">
+          <div class="cart-item__info">
+            <h2 class="cart-item__name">Wireless Headphones</h2>
+            <p class="cart-item__price">$199.50 each</p>
+          </div>
+          <div class="quantity" role="group" aria-label="Quantity for Wireless Headphones">
+            <button type="button" class="quantity__btn minus" aria-label="Decrease quantity of Wireless Headphones">&minus;</button>
+            <span class="quantity__value" aria-live="polite">1</span>
+            <button type="button" class="quantity__btn plus" aria-label="Increase quantity of Wireless Headphones">+</button>
+          </div>
+          <p class="cart-item__total" aria-label="Line total">$<span class="line-total">199.50</span></p>
+          <div class="cart-item__actions">
+            <button type="button" class="icon-btn like-btn" aria-pressed="false" aria-label="Like Wireless Headphones">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <button type="button" class="icon-btn delete-btn" aria-label="Remove Wireless Headphones">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <line x1="10" y1="11" x2="10" y2="17"></line>
+                <line x1="14" y1="11" x2="14" y2="17"></line>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="cart__empty" id="empty-state" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <h2>Your cart is empty</h2>
+        <p>You have removed every item from the cart.</p>
+        <button type="button" class="restore-btn" id="restore-btn">Restore demo items</button>
+      </div>
+
+      <footer class="cart__footer">
+        <div class="cart__summary">
+          <span>Total</span>
+          <strong id="cart-total" aria-live="polite">$409.49</strong>
+        </div>
+        <p class="cart__note" id="cart-note">Taxes and shipping are calculated at checkout.</p>
+        <button type="button" class="checkout-btn" id="checkout-btn">Checkout</button>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
